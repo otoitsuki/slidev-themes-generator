@@ -1,0 +1,36 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Generated themes (output artifacts — regenerate with `pnpm pptx2slidev`)
+packages/themes/*
+!packages/themes/.gitkeep
+
+# Built showcase output (regenerate with `pnpm showcase:generate`)
+# Ignore built theme directories but keep the builder scripts
+packages/showcase/*/
+
+# Original PPTX source files (too large for git)
+pptx/*
+!pptx/.gitkeep
+
+# Internal dev artifacts
+.claude/
+MEMORY/
+Plans/
+design-docs/
+HANDOFF.md
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Temp
+*.tmp
+.tmp-*/

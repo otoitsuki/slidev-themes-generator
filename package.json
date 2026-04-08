@@ -1,0 +1,31 @@
+{
+  "name": "slidev-themes-generator",
+  "version": "0.1.0",
+  "description": "Convert PowerPoint (.pptx) templates to Slidev themes automatically",
+  "private": true,
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/itsuki/slidev-themes-generator.git"
+  },
+  "keywords": [
+    "slidev",
+    "slidev-theme",
+    "powerpoint",
+    "pptx",
+    "converter",
+    "presentation"
+  ],
+  "scripts": {
+    "pptx2slidev": "bun run packages/converter/src/cli.ts",
+    "showcase": "node packages/showcase/generate.mjs && npx serve packages/showcase",
+    "showcase:generate": "node packages/showcase/generate.mjs",
+    "showcase:rebuild": "node packages/showcase/generate.mjs --force && npx serve packages/showcase"
+  },
+  "packageManager": "pnpm@10.15.0+sha512.486ebc259d3e999a4e8691ce03b5cac4a71cbeca39372a9b762cb500cfdf0873e2cb16abe3d951b1ee2cf012503f027b98b6584e4df22524e0c7450d9ec7aa7b",
+  "devDependencies": {
+    "@slidev/cli": "^52.14.2",
+    "@slidev/theme-default": "^0.25.0",
+    "playwright-chromium": "^1.59.1"
+  }
+}
