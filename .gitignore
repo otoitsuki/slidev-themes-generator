@@ -7,8 +7,9 @@ packages/themes/*
 !packages/themes/.gitkeep
 
 # Built showcase output (regenerate with `pnpm showcase:generate`)
-# Ignore built theme directories but keep the builder scripts
+# Only keep the generator script
 packages/showcase/*/
+packages/showcase/index.html
 
 # Original PPTX source files (too large for git)
 pptx/*
